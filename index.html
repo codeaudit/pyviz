@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8"/>
+  <title>
+   PyViz — PyViz 0.0.1 documentation
+  </title>
+  <meta content="How to solve visualization problems with Python tools." name="description"/>
+  <meta content="PyViz authors" name="author"/>
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js">
+  </script>
+  <script>
+   WebFont.load({
+      google: {
+        families: ['Source Sans Pro']
+      }
+    });
+  </script>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="_static/css/main.css" rel="stylesheet"/>
+  <link href="_static/nbsite.css" rel="stylesheet"/>
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+  </script>
+  <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+  </script>
+  <script src="_static/js/main.js">
+  </script>
+  <script src="_static/nbsite.js">
+  </script>
+  <script src="_static/require.js">
+  </script>
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="_static/favicon.ico" rel="icon" type="image/png"/>
+  <!-- Canonical
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="/index.html" rel="canonical"/>
+ </head>
+ <body class="">
+  <header class="navigation">
+   <div class="wrapper">
+    <a class="logo" href="#">
+     <img alt="Logo" src="_static/pyviz-logo.png"/>
+    </a>
+    <a class="navigation-menu logo-text" href="#">
+     PyViz
+    </a>
+    <a class="navigation-menu-button" href="javascript:void(0)" id="js-mobile-menu">
+     Menu
+    </a>
+    <nav>
+     <ul class="navigation-menu show" id="js-navigation-menu">
+      <li class="nav-link">
+       <a href="tutorial/index.html">
+        Tutorial
+       </a>
+      </li>
+      <li class="nav-link">
+       <a href="FAQ.html">
+        FAQ
+       </a>
+      </li>
+      <li class="nav-link">
+       <a href="about.html">
+        About
+       </a>
+      </li>
+      <li class="nav-link">
+       <div style="display:inline-block;vertical-align: middle;">
+        <div class="search-bar">
+         <form action="search.html" method="get" role="search">
+          <input name="q" placeholder="Search" type="search"/>
+          <button type="submit">
+           <img alt="Search Icon" src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png"/>
+          </button>
+         </form>
+        </div>
+       </div>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <!-- MAIN BODY OF DOCS –––––––––––––––––– -->
+  <div class="docs section">
+   <div id="hacketyhackhack">
+    <!-- style="width:20%;margin-right: 100px;"> -->
+    <!--style="display: none;"> style="display:none;"> -->
+    <div class="toc" style="width:15%; margin-right:20px;">
+     <ul class="current">
+      <li class="toctree-l1 current">
+       <a class="current reference internal" href="#">
+        Introduction
+       </a>
+      </li>
+      <li class="toctree-l1">
+       <a class="reference internal" href="tutorial/index.html">
+        Tutorial
+       </a>
+      </li>
+      <li class="toctree-l1">
+       <a class="reference internal" href="FAQ.html">
+        FAQ
+       </a>
+      </li>
+      <li class="toctree-l1">
+       <a class="reference internal" href="about.html">
+        About
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="content">
+    <!-- style="max-width:80%;margin-left:auto;margin-right: auto;">-->
+    <div class="section" id="pyviz">
+     <h1>
+      PyViz
+      <a class="headerlink" href="#pyviz" title="Permalink to this headline">
+       ¶
+      </a>
+     </h1>
+     <p>
+      <strong>
+       How to solve visualization problems with Python tools
+      </strong>
+     </p>
+     <p>
+      The PyViz website and corresponding GitHub repository provide
+examples, demos, and training materials documenting how to solve
+visualization problems using interactive web-based Python tools,
+including
+      <a class="reference external" href="http://bokeh.pydata.org">
+       Bokeh
+      </a>
+      ,
+      <a class="reference external" href="http://holoviews.org">
+       HoloViews
+      </a>
+      ,
+      <a class="reference external" href="http://geo.holoviews.org">
+       GeoViews
+      </a>
+      ,
+      <a class="reference external" href="https://github.com/bokeh/datashader">
+       Datashader
+      </a>
+      , and
+      <a class="reference external" href="https://github.com/ioam/param">
+       Param
+      </a>
+      .
+     </p>
+     <p>
+      So far, PyViz includes:
+     </p>
+     <ul class="simple">
+      <li>
+       A comprehensive
+       <a class="reference external" href="tutorial/index">
+        tutorial
+       </a>
+       showing how to use all these tools together to do a wide range of different tasks.
+      </li>
+      <li>
+       A shared environment
+       <a class="reference external" href="https://conda.io">
+        Conda
+       </a>
+       environment “pyviz” that makes it simple to install matching versions of all libraries needed for the tutorial and for using these tools in general.
+      </li>
+      <li>
+       Sample datasets to work with.
+      </li>
+     </ul>
+     <p>
+      You can view the
+      <a class="reference external" href="tutorial/index">
+       Tutorial
+      </a>
+      online, to get an idea what is covered.  If it looks relevant to you, you can then follow the steps below to get the sample data and set up the environment, and you’ll then be ready to work through the tutorial yourself. You’ll then have simple-to-adapt starting points for solving your own visualization problems.
+     </p>
+     <div class="section" id="installation">
+      <h2>
+       Installation
+       <a class="headerlink" href="#installation" title="Permalink to this headline">
+        ¶
+       </a>
+      </h2>
+      <div class="section" id="step-1-clone-the-pyviz-repository">
+       <h3>
+        Step 1: Clone the
+        <a class="reference external" href="https://github.com/pyviz/pyviz/blob/master/README.rst">
+         pyviz
+        </a>
+        repository
+        <a class="headerlink" href="#step-1-clone-the-pyviz-repository" title="Permalink to this headline">
+         ¶
+        </a>
+       </h3>
+       <ul class="simple">
+        <li>
+         Any Linux, Mac OS X, or Windows computer with a web browser should be suitable.  We recommend Chrome, but other browsers should also work.
+        </li>
+        <li>
+         16GB of RAM is required for some of the examples, but most will run fine in 4GB.
+        </li>
+        <li>
+         Clone this repository, e.g. using
+         <code class="docutils literal">
+          <span class="pre">
+           git
+          </span>
+          <span class="pre">
+           clone
+          </span>
+          <span class="pre">
+           https://github.com/pyviz/pyviz.git
+          </span>
+         </code>
+        </li>
+        <li>
+         Open a terminal window inside your clone of the repository.
+        </li>
+       </ul>
+      </div>
+      <div class="section" id="step-2-create-the-pyviz-conda-environment-from-environment-yml">
+       <h3>
+        Step 2: Create the
+        <code class="docutils literal">
+         <span class="pre">
+          pyviz
+         </span>
+        </code>
+        conda environment from
+        <code class="docutils literal">
+         <span class="pre">
+          environment.yml
+         </span>
+        </code>
+        <a class="headerlink" href="#step-2-create-the-pyviz-conda-environment-from-environment-yml" title="Permalink to this headline">
+         ¶
+        </a>
+       </h3>
+       <p>
+        If you don’t already have it, install
+        <a class="reference external" href="https://www.continuum.io/downloads">
+         conda
+        </a>
+        , and then create the
+        <code class="docutils literal">
+         <span class="pre">
+          pyviz
+         </span>
+        </code>
+        environment by executing:
+       </p>
+       <div class="highlight-default">
+        <div class="highlight">
+         <pre><span></span><span class="o">&gt;</span> <span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">--</span><span class="n">force</span> <span class="o">-</span><span class="n">f</span> <span class="n">environment</span><span class="o">.</span><span class="n">yml</span>
+</pre>
+        </div>
+       </div>
+       <p>
+        When installation is complete you may activate the environment by writing:
+       </p>
+       <div class="highlight-default">
+        <div class="highlight">
+         <pre><span></span><span class="o">&gt;</span> <span class="n">activate</span> <span class="n">pyviz</span>
+</pre>
+        </div>
+       </div>
+       <p>
+        (for Windows) or:
+       </p>
+       <div class="highlight-default">
+        <div class="highlight">
+         <pre><span></span>$ source activate pyviz
+</pre>
+        </div>
+       </div>
+       <p>
+        (for Linux and Mac).
+       </p>
+       <p>
+        Later, when you are ready to exit the environment after the tutorial, you can type:
+       </p>
+       <div class="highlight-default">
+        <div class="highlight">
+         <pre><span></span><span class="o">&gt;</span> <span class="n">deactivate</span>
+</pre>
+        </div>
+       </div>
+       <p>
+        If for some reason you want to remove the environment entirely, you can do so by running:
+       </p>
+       <div class="highlight-default">
+        <div class="highlight">
+         <pre><span></span><span class="o">&gt;</span> <span class="n">conda</span> <span class="n">env</span> <span class="n">remove</span> <span class="o">--</span><span class="n">name</span> <span class="n">pyviz</span>
+</pre>
+        </div>
+       </div>
+      </div>
+      <div class="section" id="step-3-downloading-the-sample-data">
+       <h3>
+        Step 3: Downloading the sample data
+        <a class="headerlink" href="#step-3-downloading-the-sample-data" title="Permalink to this headline">
+         ¶
+        </a>
+       </h3>
+       <p>
+        These tutorials show you how to work with some fairly
+large datasets.  Unfortunately, that also means that you have to
+download this data. To make this as easy as possible we have provided
+a script that will download the data for you.  Simply execute in the
+root of your clone of this repository:
+       </p>
+       <div class="highlight-default">
+        <div class="highlight">
+         <pre><span></span><span class="o">&gt;</span> <span class="n">python</span> <span class="n">download_sample_data</span><span class="o">.</span><span class="n">py</span>
+</pre>
+        </div>
+       </div>
+      </div>
+      <div class="section" id="step-4-launch-jupyter-notebook">
+       <h3>
+        Step 4: Launch Jupyter Notebook
+        <a class="headerlink" href="#step-4-launch-jupyter-notebook" title="Permalink to this headline">
+         ¶
+        </a>
+       </h3>
+       <p>
+        You can then launch the notebook server and client:
+       </p>
+       <div class="highlight-default">
+        <div class="highlight">
+         <pre><span></span><span class="p">(</span><span class="n">pyviz</span><span class="p">)</span><span class="o">&gt;</span> <span class="n">jupyter</span> <span class="n">notebook</span>
+</pre>
+        </div>
+       </div>
+       <p>
+        A browser window with a Jupyter Notebook instance should now open,
+letting you select and execute each notebook.  You can start with the
+ones in the “notebooks” subdirectory, as these show how to use the
+others in the “exercises” directory along with the applications in the
+“apps” directory.
+       </p>
+       <p>
+        If you don’t see the notebook appear (e.g. on some OS X versions),
+you’ll need to cut and paste the URL from the console output manually.
+       </p>
+      </div>
+      <div class="section" id="step-5-test-that-everything-is-working">
+       <h3>
+        Step 5: Test that everything is working
+        <a class="headerlink" href="#step-5-test-that-everything-is-working" title="Permalink to this headline">
+         ¶
+        </a>
+       </h3>
+       <p>
+        You can see if everything has installed correctly by selecting the
+        <code class="docutils literal">
+         <span class="pre">
+          00_Welcome.ipynb
+         </span>
+        </code>
+        notebook and doing “Cell/Run All” in the menus.
+There may be warnings on some platforms, but you’ll know it is working
+if you see the orange HoloViews logo after it runs
+        <code class="docutils literal">
+         <span class="pre">
+          hv.extension()
+         </span>
+        </code>
+        .
+       </p>
+       <div class="toctree-wrapper compound">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- END MAIN BODY OF DOCS ––––––––––––– -->
+  <footer class="footer">
+   <div class="footer-links">
+    <ul>
+     <li>
+      <span class="footer-title">
+       Links
+      </span>
+     </li>
+     <li>
+      <a href="tutorial/index.html">
+       Tutorial
+      </a>
+     </li>
+     <li>
+      <a href="FAQ.html">
+       FAQ
+      </a>
+     </li>
+     <li>
+      <a href="about.html">
+       About
+      </a>
+     </li>
+    </ul>
+    <ul>
+     <li>
+      <span class="footer-title">
+       Join Us
+      </span>
+     </li>
+     <li>
+      <a href="//gitter.im/ioam/holoviews">
+       Gitter
+      </a>
+     </li>
+     <li>
+      <a href="//github.com/pyviz/pyviz">
+       Github
+      </a>
+     </li>
+    </ul>
+    <ul class="copyright">
+     <li>
+      2017 PyViz authors
+     </li>
+    </ul>
+   </div>
+  </footer>
+  <!-- Google Analytics -->
+  <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61554933-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <!-- MathJax Config -->
+  <script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+  </script>
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ </body>
+</html>
